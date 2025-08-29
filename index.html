@@ -3,13 +3,33 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <canvas></canvas>]
-    <input type = "color" id = "colorPicker">
-    <input type = "number" value = "5" id = "size">
-    <input type = "checkbox" id = "paintCheck" name="paintCheck">
-    <label for="paintCheck">fillbucket</label>
+    <div id="pageContainer">
+        <canvas></canvas>
+        <div id="container">
+            <div id = "section-item">
+                <input type = "color" id = "colorPicker" name="colorinput">
+                <label for="colorinput">Brush Color</label>
+            </div>
+            <div id = "section-item">
+                <input type = "number" value = "5" id = "size" name="sizeinput">
+                <label for="sizeinput">Brush Size</label>
+            </div>
+            <div id = "section-item">
+                <input type = "checkbox" id = "paintCheck" name="paintCheck">
+                <label for="paintCheck">Fill Bucket</label>
+            </div>
+            <div id = "section-item">
+                <input type = "checkbox" id = "eraser" name="eraser">
+                <label for="eraser">Eraser</label>
+            </div>
+            <div id = "section-item">
+                <input type = "button" id = "clearScreen" name="clearScreen" value="Clear Screen">
+            </div>
+        </div>
+    </div>
     <script src="app.js" defer></script>
 </body>
 </html>
